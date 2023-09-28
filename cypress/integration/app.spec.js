@@ -114,7 +114,8 @@ describe('TodoMVC', function () {
       cy.get('.new-todo')
       .type('todo A{enter}')
       .type('todo B{enter}') // we can continue working with same element
-      .type('todo C{enter}') // and keep adding new items     
+      .type('todo C{enter}') // and keep adding new items 
+      .type('todo D{enter}') // and keep adding new items    
 
       cy.get('.todo-list li').should('have.length', 4)
     })
